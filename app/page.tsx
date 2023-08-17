@@ -1,14 +1,15 @@
-import Head from "next/head";
+"use client"
 import Image from "next/image";
-import Script from "next/script";
+import { useEffect, useState } from "react";
 
 export default function Home() {
-  return (
-    <>
-      <Head>
-        {/* <!-- Meta Pixel Code --> */}
-        <script>{
-           `!function(f,b,e,v,n,t,s)
+  const [pixel,setPixel] = useState<Element | null>(null)
+  
+  useEffect(() => {
+    setPixel(
+      <>
+        <script>
+          {`!function(f,b,e,v,n,t,s)
       {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
       n.callMethod.apply(n,arguments):n.queue.push(arguments)};
       if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
@@ -17,19 +18,24 @@ export default function Home() {
       s.parentNode.insertBefore(t,s)}(window, document,'script',
       'https://connect.facebook.net/en_US/fbevents.js');
       fbq('init', '317000867449369');
-      fbq('track', 'PageView');`
-          }
+      fbq('track', 'PageView');`}
         </script>
         <noscript>
           <img
             height="1"
             width="1"
-            style={{display:"none"}}
+            style={{ display: "none" }}
             src="https://www.facebook.com/tr?id=317000867449369&ev=PageView&noscript=1"
           />
         </noscript>
-        {/* <!-- End Meta Pixel Code --> */}
-      </Head>
+      </>
+    );
+  }, []);
+
+  return (
+    <>
+      {/* <iframe src="http://localhost:3000/pixel" /> */}
+      {pixel}
       <main className="flex min-h-screen flex-col items-center justify-between p-24">
         <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
           <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
