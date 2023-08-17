@@ -3,7 +3,7 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 
 export default function Home() {
-  const [pixel,setPixel] = useState<Element | null>(null)
+  const [pixel,setPixel] = useState<JSX.Element | null>(null)
   
   useEffect(() => {
     setPixel(
@@ -29,7 +29,7 @@ export default function Home() {
           />
         </noscript>
       </>
-    );
+    )
   }, []);
 
   return (
