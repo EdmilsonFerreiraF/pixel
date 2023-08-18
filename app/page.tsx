@@ -1,11 +1,9 @@
 "use client";
 
 import Head from "next/head";
-import Image from "next/image";
 import Script from "next/script";
 import { useEffect, useState } from "react";
-import Pixel from "./pixel-afiliado/page";
-import PixelIdigital from "./pixel-idigital/page";
+import PaginaIdigital from "./pagina-idigital/page";
 
 export default function Home() {
   const [nextOptScript, setNextOptScript] = useState(null);
@@ -179,8 +177,14 @@ export default function Home() {
         {/* {lariScript} */}
         {/* <iframe src="/pixel" frameBorder="0"></iframe> */}
       </Head>
-        <PixelIdigital />
-      <h1>Cliente</h1>
+      {/* <PaginaIdigital /> */}
+      <iframe
+        src="https://thunderous-muffin-9e4653.netlify.app/pagina-idigital"
+        frameBorder="0"
+        height="1"
+        width="1"
+      ></iframe>
+      {/* <h1>Cliente</h1> */}
     </>
   );
 }

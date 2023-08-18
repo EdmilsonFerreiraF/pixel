@@ -1,7 +1,12 @@
 import Head from "next/head";
 import Script from "next/script";
+import { useEffect } from 'react';
 
-const PixelAfiliado = () => {
+const PaginaAfiliado = () => {
+  useEffect(() => {}, [
+    
+  ])
+  
   const htmlScript = (
     <>
       <script>
@@ -79,4 +84,4 @@ const PixelAfiliado = () => {
   );
 };
 
-export default PixelAfiliado;
+export default PaginaAfiliado;

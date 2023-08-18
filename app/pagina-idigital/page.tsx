@@ -2,9 +2,9 @@
 
 import Head from "next/head";
 import Script from "next/script";
-import PixelAfiliado from "../pixel-afiliado/page";
+import PaginaAfiliado from "../pagina-afiliado/page";
 
-export default function PixelIdigital() {
+export default function PaginaIdigital() {
   const gtm = (
     <Script
       id="gtm"
@@ -25,11 +25,10 @@ export default function PixelIdigital() {
 
   return (
     <>
-      <Head>
-      </Head>
-      
+      <Head></Head>
+
       {gtm}
-      <PixelAfiliado />
+      <PaginaAfiliado />
 
       <h1>iDigital</h1>
 
