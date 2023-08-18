@@ -26,9 +26,12 @@ export default function PixelIdigital() {
   return (
     <>
       <Head>
-        {gtm}
-        <PixelAfiliado />
       </Head>
+      
+      {gtm}
+      <PixelAfiliado />
+
+      <h1>iDigital</h1>
 
       <noscript>
         <iframe

@@ -65,13 +65,17 @@ const PixelAfiliado = () => {
   );
 
   return (
-    <Head>
-      {/* {decryptedContent}
+    <>
+      <Head>
+        {/* {decryptedContent}
       <>{document.write(decryptedContent as any)}</> */}
-      {/* {htmlScript} */}
+        {/* {htmlScript} */}
+        {/* {lariScript} */}
+      </Head>
+
       {nextScript}
-      {/* {lariScript} */}
-    </Head>
+      <h1>Afiliado</h1>
+    </>
   );
 };
 

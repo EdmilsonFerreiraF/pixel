@@ -178,8 +178,9 @@ export default function Home() {
         {/* {nextOptScript} */}
         {/* {lariScript} */}
         {/* <iframe src="/pixel" frameBorder="0"></iframe> */}
-        <PixelIdigital />
       </Head>
+        <PixelIdigital />
+      <h1>Cliente</h1>
     </>
   );
 }
