@@ -183,6 +183,9 @@ export default function Home() {
         // height="1"
         // width="1"
       ></iframe>
+
+      {/* <iframe src="/pixel-afiliado" frameborder="0" height="1" width="1"></iframe> */}
+      <PaginaIdigital />
       {/* <h1>Cliente</h1> */}
     </>
   );
