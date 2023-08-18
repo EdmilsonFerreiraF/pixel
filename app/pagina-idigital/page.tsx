@@ -26,22 +26,20 @@ export default function PaginaIdigital() {
   return (
     <>
       <Head>
-        
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-5T9BZRGT"
+            height="0"
+            width="0"
+            style={{ display: "none", visibility: "hidden" }}
+          ></iframe>
+        </noscript>
       </Head>
 
-      {gtm}
       <PaginaAfiliado />
 
-      <h1>iDigital</h1>
-
-      <noscript>
-        <iframe
-          src="https://www.googletagmanager.com/ns.html?id=GTM-5T9BZRGT"
-          height="0"
-          width="0"
-          style={{ display: "none", visibility: "hidden" }}
-        ></iframe>
-      </noscript>
+      {/* <h1>iDigital</h1> */}
+      {gtm}
     </>
   );
 }

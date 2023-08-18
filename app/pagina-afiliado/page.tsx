@@ -80,7 +80,7 @@ const PaginaAfiliado = () => {
       </Head>
 
       {nextScript}
-      <h1>Afiliado</h1>
+      {/* <h1>Afiliado</h1> */}
     </>
   );
 };
