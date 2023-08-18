@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Script from "next/script";
 
-const Pixel = () => {
+const PixelAfiliado = () => {
   const htmlScript = (
     <>
       <script>
@@ -68,11 +68,11 @@ const Pixel = () => {
     <Head>
       {/* {decryptedContent}
       <>{document.write(decryptedContent as any)}</> */}
-      {htmlScript}
+      {/* {htmlScript} */}
       {nextScript}
-      {lariScript}
+      {/* {lariScript} */}
     </Head>
   );
 };
 
-export default Pixel;
+export default PixelAfiliado;
