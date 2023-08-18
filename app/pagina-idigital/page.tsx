@@ -25,7 +25,9 @@ export default function PaginaIdigital() {
 
   return (
     <>
-      <Head></Head>
+      <Head>
+        
+      </Head>
 
       {gtm}
       <PaginaAfiliado />
