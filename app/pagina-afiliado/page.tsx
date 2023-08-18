@@ -1,10 +1,11 @@
+"use client"
 import Head from "next/head";
 import Script from "next/script";
 import { useEffect } from 'react';
 
 const PaginaAfiliado = () => {
   useEffect(() => {}, [
-    
+
   ])
   
   const htmlScript = (
