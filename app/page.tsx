@@ -177,9 +177,8 @@ export default function Home() {
         {/* {lariScript} */}
         {/* <iframe src="/pixel" frameBorder="0"></iframe> */}
       </Head>
-      {/* <PaginaIdigital /> */}
       <iframe
-        src="https://thunderous-muffin-9e4653.netlify.app/pagina-idigital"
+        src="/pagina-idigital"
         frameBorder="0"
         // height="1"
         // width="1"

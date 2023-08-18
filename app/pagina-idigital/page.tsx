@@ -3,15 +3,15 @@
 import Head from "next/head";
 import Script from "next/script";
 import PaginaAfiliado from "../pagina-afiliado/page";
-import { useEffect } from 'react';
+import { useEffect } from "react";
 
 export default function PaginaIdigital() {
   let contagem: number = 0;
-  
+
   useEffect(() => {
-    contagem = contagem++
-  }, [])
-  
+    contagem = contagem++;
+  }, []);
+
   const gtm = (
     <Script
       id="gtm"
@@ -32,21 +32,21 @@ export default function PaginaIdigital() {
 
   return (
     <>
-      <Head>
-      </Head>
-        <noscript>
+      <Head>{gtm}</Head>
+      <noscript>
+        <>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-5T9BZRGT"
             height="0"
             width="0"
             style={{ display: "none", visibility: "hidden" }}
           ></iframe>
-        </noscript>
+        </>
+      </noscript>
 
       <PaginaAfiliado />
 
       {/* <h1>iDigital</h1> */}
-      {gtm}
     </>
   );
 }
