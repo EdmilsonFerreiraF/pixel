@@ -177,14 +177,14 @@ export default function Home() {
         {/* {lariScript} */}
         {/* <iframe src="/pixel" frameBorder="0"></iframe> */}
       </Head>
-      {/* <iframe
+      <iframe
         src="/pagina-idigital"
         frameBorder="0"
-        // height="1"
-        // width="1"
-      ></iframe> */}
+        height="500"
+        width="500"
+      ></iframe>
 
-      <PaginaIdigital />
+      {/* <PaginaIdigital /> */}
       {/* <h1>Cliente</h1> */}
     </>
   );
