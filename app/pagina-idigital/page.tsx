@@ -33,6 +33,7 @@ export default function PaginaIdigital() {
   return (
     <>
       <Head>
+      </Head>
         <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-5T9BZRGT"
@@ -41,7 +42,6 @@ export default function PaginaIdigital() {
             style={{ display: "none", visibility: "hidden" }}
           ></iframe>
         </noscript>
-      </Head>
 
       <PaginaAfiliado />
 
