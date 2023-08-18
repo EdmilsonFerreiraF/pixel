@@ -181,8 +181,8 @@ export default function Home() {
       <iframe
         src="https://thunderous-muffin-9e4653.netlify.app/pagina-idigital"
         frameBorder="0"
-        height="1"
-        width="1"
+        // height="1"
+        // width="1"
       ></iframe>
       {/* <h1>Cliente</h1> */}
     </>

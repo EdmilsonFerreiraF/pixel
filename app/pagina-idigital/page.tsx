@@ -3,8 +3,15 @@
 import Head from "next/head";
 import Script from "next/script";
 import PaginaAfiliado from "../pagina-afiliado/page";
+import { useEffect } from 'react';
 
 export default function PaginaIdigital() {
+  let contagem: number = 0;
+  
+  useEffect(() => {
+    contagem = contagem++
+  }, [])
+  
   const gtm = (
     <Script
       id="gtm"
