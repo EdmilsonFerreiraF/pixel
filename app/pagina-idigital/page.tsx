@@ -31,7 +31,10 @@ export default function PaginaIdigital() {
   );
 
   return (
-    <>
+    <div style={{
+      width: "500px",
+      height: "500px"
+    }}>
       <Head>
       </Head>
         <noscript>
@@ -49,6 +52,6 @@ export default function PaginaIdigital() {
       {gtm}
 
       {/* <h1>iDigital</h1> */}
-    </>
+    </div>
   );
 }
